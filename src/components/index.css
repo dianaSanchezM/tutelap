@@ -1,0 +1,39 @@
+@import './../app/globals.css' ;
+
+.btn-header {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-header:hover {
+    background-color: #2d3748; /* Darker shade on hover */
+  }
+
+  .btn-special {
+    background-color: #fbbf24; /* Yellow background */
+    color: #fff; /* White text color */
+    border: none;
+  border-radius: 9999px
+  }
+  
+  .btn-special:hover {
+    background-color: #fcd34d; /* Lighter shade on hover */
+  }
+  
+  .btn-options {
+  border: 1px solid #fbbf24; /* Yellow border */
+  border-radius: 999px; /* Full rounded corners */
+  color: #271f1f; /* White text */
+  padding: 20px; /* Padding inside the button */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+  }
+
+  .btn-options:hover {
+    background-color: #ddd; /* Lighter gray background on hover */
+    color: #000; /* Black text on hover */
+
+  }
