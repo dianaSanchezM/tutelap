@@ -24,3 +24,8 @@ export const deleteTutelaSuccess = (id) => ({
   type: types.DELETE_TUTELA_SUCCESS,
   payload: id
 });
+
+export const setUserId = (userId) => ({
+  type: types.SET_USER_ID,
+  payload: userId
+});

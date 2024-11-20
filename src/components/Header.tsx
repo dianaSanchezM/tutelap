@@ -1,8 +1,11 @@
 import React from 'react';
 import './index.css';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 const Header: React.FC = () => {
+  const router = useRouter();
+
   return (
     <header className="bg-gray-800 text-white py-4">
       <div className="container mx-auto flex justify-between items-center px-4">
@@ -23,7 +26,7 @@ const Header: React.FC = () => {
               <button className="btn-header">Contact</button>
             </li>
             <li>
-              <button className="btn-header btn-special">Manage Tutelas</button>
+              <button onClick={()=>router.push(`/tutelas`)} className="btn-header btn-special">Manage Tutelas</button>
             </li>
           </ul>
         </nav>

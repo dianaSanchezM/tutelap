@@ -37,3 +37,7 @@
     color: #000; /* Black text on hover */
 
   }
+
+  .header-spacing {
+    margin-bottom: 0rem; /* Ajusta el valor a tu gusto */
+  }

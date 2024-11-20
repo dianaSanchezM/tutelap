@@ -4,6 +4,7 @@ import Header from '../components/Header';
 import '../app/globals.css';
 import { Provider } from 'react-redux';
 import store from '@/redux/store';
+import TutelaManager from './TutelaManager';
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
@@ -13,6 +14,8 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
       <Header />
       <main className="flex-grow bg-gray-100">
             <Component {...pageProps} />
+        {/*<TutelaManager />*/}
+
       </main>
       <Footer/>
       </Provider>
@@ -21,4 +24,5 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
 };
 
 export default MyApp;
+
 

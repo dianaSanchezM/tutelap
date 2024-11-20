@@ -8,14 +8,3 @@ const store = configureStore({
 
 export default store;
 
-
-
-
-
-/*export default function MyApp({ Component, pageProps }) {
-  return (
-    <Provider store={store}>
-      <Component {...pageProps} />
-    </Provider>
-  );
-}*/

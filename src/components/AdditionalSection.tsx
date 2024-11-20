@@ -12,7 +12,7 @@ const CenteredContainer: React.FC = () => {
         </Link>
         </div>
         <div className="bg-gray-800 hover:text-gray-900 p-4 rounded-3xl shadow-lg  hover:bg-yellow-500 transition duration-300 flex flex-col w-full">
-        <Link href="/tutela">
+        <Link href="/search">
           <h3 className="text-xl text-gray-200 font-bold mb-2 px-2">Consult Status</h3>
           <p className="text-gray-200 px-2">Stay informed about the status of your tutelas in real-time.</p>
         </Link>
@@ -27,6 +27,12 @@ const CenteredContainer: React.FC = () => {
         <Link href="/delete">
           <h3 className="text-xl text-gray-200 font-bold mb-2 px-2">Delete Tutela</h3>
           <p className="text-gray-200 px-2">Remove tutela that are no longer necessary.</p>
+        </Link>
+        </div>
+        <div className="bg-gray-800 hover:text-gray-900 p-4 rounded-3xl shadow-lg  hover:bg-yellow-500 transition duration-300 flex flex-col w-full">
+        <Link href="/tutelas">
+          <h3 className="text-xl text-gray-200 font-bold mb-2 px-2">Get tutelas</h3>
+          <p className="text-gray-200 px-2">See all the existing tutelas</p>
         </Link>
         </div>
         </div>

@@ -1,7 +1,7 @@
 import React , {useState} from "react";
 import IdentificationInput from "@/components/IdentificationInput";
-import { useSelector, useDispatch } from 'react-redux';
-import { getTutelas, deleteTutela } from "@/redux/actions/index";
+import { useDispatch } from 'react-redux';
+import { deleteTutelaSuccess } from "@/redux/actions/index";
 import { useRouter } from 'next/router';
 
 const Delete: React.FC = () => {
@@ -10,9 +10,9 @@ const Delete: React.FC = () => {
     const router = useRouter();
 
     const handleDelete =(props:any)=>{
-        const test =dispatch(deleteTutela(props));
+        const test =dispatch(deleteTutelaSuccess(props));
         console.log('log test',{test});
-        router.push('/list');
+        router.push('/success');
     };
 
   return (

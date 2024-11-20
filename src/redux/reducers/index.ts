@@ -309,7 +309,9 @@ const tutelasReducer = (state = initialState, action:any) => {
     case types.FETCH_TUTELA_SUCCESS:
       return {
         ...state,
-        tutela: action.payload
+        tutela: state.tutelas.find(tutela =>
+          tutela.un === action.payload.un
+        )
       };
     case types.CREATE_TUTELA_SUCCESS:
       return {
@@ -317,16 +319,24 @@ const tutelasReducer = (state = initialState, action:any) => {
         tutelas: [...state.tutelas, action.payload]
       };
     case types.UPDATE_TUTELA_SUCCESS:
+
       return {
         ...state,
         tutelas: state.tutelas.map(tutela =>
-          tutela.id === action.payload.id ? action.payload : tutela
+          tutela.un === action.payload.un ? action.payload : tutela
         )
       };
     case types.DELETE_TUTELA_SUCCESS:
+    return {
+        ...state,
+        tutelas: state.tutelas.filter(tutela => {
+    return Number(tutela.un) !== Number(action.payload);
+        })
+      };
+    case types.SET_USER_ID:
       return {
         ...state,
-        tutelas: state.tutelas.filter(tutela => tutela.id !== action.payload)
+        userId: action.payload
       };
     default:
       return state;
